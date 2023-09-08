@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Animal Game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="/js/animalgame.js"></script>
+    </head>
+
+    <body>
+        <h2 id="title">The Animal Game</h2>
+
+        <div id="agpickanimal">
+            <p id="agpick">what pet will you adopt?</p>
+            <div id = "aganimallist">
+                <button id="agturtle" class="aganimalpick">🐢</button>
+                <button id="agcat" class="aganimalpick">🐈</button>
+                <button id="agdog" class="aganimalpick">🐕</button>
+            </div>
+        
+            <p id="agpickresult"></p>
+    
+            <div id="agnamebox"hidden=true>
+                <p>what name will you chose for your pet?</p>
+                <input id = "agnameinput" type="text" value=""></input> <br>
+                <button id="agsubmitname">name</button>
+                <p id="agnamefail" hidden = true>you have to give it a name!</p>
+            </div>
+        </div>
+
+        <div hidden id="agmain">
+            <p id="aganimalname">joshar shoe</p>
+            <button id="aganimal">🐶</button>
+
+            <div id="agstats">
+                <p id="agage">age: 51</p>
+                <p id="aghunger">hunger: 551</p>
+                <p id="agdiet">diet: humans</p>
+                <p id="agspecies">species: turtle</p>
+            </div>
+        </div>
+    </body>
+</html>

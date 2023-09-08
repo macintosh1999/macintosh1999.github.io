@@ -13,3 +13,47 @@ a {
 #title {
     text-align: center;
 }
+
+#agpick{
+    text-align: center;
+}
+
+#agpickresult{
+    text-align: center;
+}
+
+#agnamebox{
+    text-align: center;
+}
+
+#agsubmitname{
+    margin-top: 5px;
+}
+
+#aganimallist{
+    display: flex;
+    width: 50%;
+    padding-left: 25%;
+}
+
+.aganimalpick{
+    background: none;
+    border: 0;
+    width: 25px;
+    height: 100px;
+    font-size: 50px;
+    flex-grow: 4;
+}
+
+#agmain{
+    text-align: center;
+    padding-top: 50px;
+}
+
+#aganimal{
+    background: none;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    border: 0;
+}
