@@ -48,7 +48,7 @@ a {
 #main404{
     display: flex;
     justify-content: center;
-    padding-top: 45%;
+    align-items: center;
 }
 
 #agmain{
