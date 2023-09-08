@@ -21,7 +21,7 @@ function init() {
 
     const speciesData = {
         turtle: {
-            diet: ["algae", "fruits"],
+            diet: ["algae","fruits"],
             maxAge: 30
         },
 
