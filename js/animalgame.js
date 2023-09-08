@@ -21,19 +21,19 @@ function init() {
 
     const speciesData = {
         turtle: {
-            diet: {algae, fruits},
+            diet: ["algae", "fruits"],
             maxAge: 30
         },
 
         cat: {
-            diet: {meat, catfood},
+            diet: ["meat", "catfood"],
             maxAge: 18
         },
 
         dog: {
-            diet: {meat,fruits,vegetables},
+            diet: ["meat","fruits","vegetables"],
             maxAge: 13
-        }
+        },
     }
 
     const mainStats = {
@@ -41,7 +41,7 @@ function init() {
         age: document.getElementById("agage"),
         hungerlvl: document.getElementById("aghunger"),
         diet: document.getElementById("agdiet"),
-        species: document.getElementById("species"),
+        species: document.getElementById("agspecies"),
     }
 
     class Animal {
@@ -79,15 +79,16 @@ function init() {
 
         submitname.onclick = function () {
             if (namebox.value != "") {
-                pet = new Animal(namebox.value,1);
+                pet = new Animal(namebox.value,1,speciesData[pickedAnimal].diet,100,true,pickedAnimal);
                 pickdiv.hidden = true
                 avis.innerText = speciesVis[pickedAnimal]
                 main.hidden = false
 
-              //  mainStats.age.innerText = `age: ${pet.getInfo().age}`
-               // mainStats.name.innerText = pet.getInfo().name
-               // mainStats.hungerlvl.innerText = `hunger: ${pet.getInfo().hungerlvl}`
-               // mainStats.species.innerText = `species: ${pet.getInfo().species}`
+                mainStats.age.innerText = `age: ${pet.getInfo().age}`
+                mainStats.name.innerText = pet.getInfo().name
+                mainStats.hungerlvl.innerText = `hunger: ${pet.getInfo().hungerlvl}`
+                mainStats.diet.innerText = `diet: ${pet.getInfo().diet}`
+                mainStats.species.innerText = `species: ${pet.getInfo().species}`
 
             } else {
                 document.getElementById("agnamefail").hidden = false
@@ -96,19 +97,19 @@ function init() {
     }
 
     turtlepick.onclick = function () {
-        pickresult.innerHTML = "You have chosen the turtle!"
+        pickresult.innerHTML = "you have chosen the turtle"
         pickedAnimal = "turtle"
         afterClick()
     }
 
     catpick.onclick = function () {
-        pickresult.innerHTML = "You have chosen the cat!"
+        pickresult.innerHTML = "you have chosen the cat"
         pickedAnimal = "cat"
         afterClick()
     }
 
     dogpick.onclick = function () {
-        pickresult.innerHTML = "You have chosen the dog!"
+        pickresult.innerHTML = "Yyou have chosen the dog"
         pickedAnimal = "dog"
         afterClick()
     }

@@ -45,6 +45,12 @@ a {
     flex-grow: 4;
 }
 
+#main404{
+    display: flex;
+    justify-content: center;
+    padding-top: 45%;
+}
+
 #agmain{
     text-align: center;
     padding-top: 50px;

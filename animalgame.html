@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Animal Game</title>
+        <title>Virtual Pet</title>
         <link rel="stylesheet" href="style.css">
         <script src="/js/animalgame.js"></script>
+        <link rel="icon" type="image/x-icon" href="/images/faviconag.ico">
     </head>
 
     <body>
-        <h2 id="title">The Animal Game</h2>
+        <h2 id="title">Virtual Pet</h2>
 
         <div id="agpickanimal">
-            <p id="agpick">what pet will you adopt?</p>
+            <p id="agpick">what pet will you raise?</p>
             <div id = "aganimallist">
                 <button id="agturtle" class="aganimalpick">🐢</button>
                 <button id="agcat" class="aganimalpick">🐈</button>
@@ -22,7 +23,7 @@
             <div id="agnamebox"hidden=true>
                 <p>what name will you chose for your pet?</p>
                 <input id = "agnameinput" type="text" value=""></input> <br>
-                <button id="agsubmitname">name</button>
+                <button id="agsubmitname">start raising</button>
                 <p id="agnamefail" hidden = true>you have to give it a name!</p>
             </div>
         </div>
@@ -36,6 +37,12 @@
                 <p id="aghunger">hunger: 551</p>
                 <p id="agdiet">diet: humans</p>
                 <p id="agspecies">species: turtle</p>
+            </div>
+
+            <div id="agactions">
+                <button>feed</button>
+                <button>do nothing</button>
+                <button>play</button>
             </div>
         </div>
     </body>
