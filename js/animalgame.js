@@ -109,7 +109,7 @@ function init() {
     }
 
     dogpick.onclick = function () {
-        pickresult.innerHTML = "Yyou have chosen the dog"
+        pickresult.innerHTML = "you have chosen the dog"
         pickedAnimal = "dog"
         afterClick()
     }
